@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "scripts": {
+    "ex1": "tsx exercise-01.ts",
+    "ex2": "tsx exercise-02.ts",
+    "ex3": "tsx exercise-03.ts",
+    "ex4": "tsx exercise-04.ts",
+    "ex5": "tsx exercise-05-recap.ts",
+    "ex6": "tsx exercise-06.ts",
+    "ex7": "tsx exercise-07.ts",
+    "ex8": "tsx exercise-08.ts",
+    "ex9": "tsx exercise-09.ts",
+    "ex11": "tsx exercise-11.ts",
+    "ex12": "tsx exercise-12.ts",
+    "ex13": "tsx exercise-13.ts",
+    "ex14": "tsx exercise-14.ts",
+    "ex15": "tsx exercise-15.ts",
+    "ex16": "tsx exercise-16.ts",
+    "ex17": "tsx exercise-17.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  }
+}
