@@ -162,7 +162,7 @@ interface ReadonlyCartItem {
     readonly id: number;
     readonly name: string;
     readonly price: number;
-    readonly quantity: number;
+    quantity: number;          // not readonly — user can change how many they want
     readonly category: string;
 }
 
