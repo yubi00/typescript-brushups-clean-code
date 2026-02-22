@@ -14,7 +14,13 @@ Each exercise has a **messy version** (working but problematic code) and a **ref
 ## How to Run
 
 ```bash
-npx tsx exercise-XX.ts
+# Using npm scripts (recommended)
+npm run ex1
+npm run ex17
+# ... ex1 through ex17
+
+# Or directly with tsx
+npx tsx exercise-01.ts
 ```
 
 ## Exercises
@@ -40,7 +46,8 @@ npx tsx exercise-XX.ts
 
 ## Reference
 
-- `CLEAN_CODE_TS.md` — comprehensive clean code guide used throughout the exercises
+- `CLEAN_CODE_TS.md` — comprehensive clean code guide used throughout the exercises, based on [clean-code-typescript](https://github.com/labs42io/clean-code-typescript)
+
 - `PROGRESS.md` — detailed progress tracking and skills acquired
 
 ## Setup
