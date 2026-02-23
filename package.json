@@ -16,7 +16,9 @@
     "ex14": "tsx exercise-14.ts",
     "ex15": "tsx exercise-15.ts",
     "ex16": "tsx exercise-16.ts",
-    "ex17": "tsx exercise-17.ts"
+    "ex17": "tsx exercise-17.ts",
+    "ex18": "tsx exercise-18.ts",
+    "ex19": "tsx exercise-19.ts"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",

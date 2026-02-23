@@ -16,8 +16,8 @@ Each exercise has a **messy version** (working but problematic code) and a **ref
 ```bash
 # Using npm scripts (recommended)
 npm run ex1
-npm run ex17
-# ... ex1 through ex17
+npm run ex19
+# ... ex1 through ex19
 
 # Or directly with tsx
 npx tsx exercise-01.ts
@@ -43,6 +43,8 @@ npx tsx exercise-01.ts
 | exercise-15.ts | Comprehensive Refactoring Challenge — Food Delivery System |
 | exercise-16.ts | Error Handling Patterns — Result<T, E> type |
 | exercise-17.ts | Immutability & Side Effects — pure functions, readonly, as const |
+| exercise-18.ts | OOP Refactoring — god class, SRP, interfaces, private/readonly, DIP |
+| exercise-19.ts | Final Mock Assessment — Subscription Billing System (combines all) |
 
 ## Reference
 

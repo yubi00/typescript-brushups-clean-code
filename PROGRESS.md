@@ -150,7 +150,7 @@ Prepare for technical assessment focused on TypeScript refactoring
 ---
 
 ## Phase 5: Clean Code & Refactoring (Days 9-12)
-**Status: 🔥 IN PROGRESS**
+**Status: ✅ COMPLETED**
 
 - [x] **Exercise 13:** SOLID Principles (Practical Refactoring) ✅
   - SRP: Refactor god class → focused classes (PasswordValidator, EmailService, UserService)
@@ -171,32 +171,47 @@ Prepare for technical assessment focused on TypeScript refactoring
   - BONUS: Replace Conditionals with Polymorphism (ShippingMethod interface)
   - File: `exercise-14.ts`
 
-- [ ] **Exercise 15:** Comprehensive Refactoring Challenge (Mock Assessment) 🔥 NEXT
-  - Realistic "messy" order processing system
-  - Combines ALL code smells: god function, magic numbers, poor naming, nested ifs, duplicates
-  - Refactor applying all learned principles
+- [x] **Exercise 15:** Comprehensive Refactoring Challenge — Food Delivery System ✅
+  - God function → focused helpers (validateOrder, calculateSubtotal, applyPromoCode, etc.)
+  - Magic numbers → named constants (TAX_RATE, MAX_DELIVERY_DISTANCE, etc.)
+  - Record<K,V> lookup tables for payment fees and promo codes
+  - Distance fee brackets with for...of (first match wins)
+  - Guard clauses + parameter objects
   - File: `exercise-15.ts`
 
+- [x] **Exercise 16:** Error Handling Patterns — Blog Post Publishing Pipeline ✅
+  - Result<T, E> discriminated union type
+  - ok() / fail() helper functions
+  - Interface hierarchy with extends (Post → EnrichedPost → PublishedPost)
+  - Pipeline pattern: each step checks ok/error, early returns
+  - File: `exercise-16.ts`
+
+- [x] **Exercise 17:** Immutability & Side Effects — Shopping Cart ✅
+  - readonly on interface fields (prevent field reassignment)
+  - ReadonlyArray<T> (prevent push/splice/sort on arrays)
+  - as const on lookup objects (deeply locked)
+  - Pure functions: no mutation, no side effects
+  - [...array].sort() vs array.sort() (copy before sort)
+  - map/filter/reduce instead of imperative push loops
+  - File: `exercise-17.ts`
+
+- [x] **Exercise 18:** OOP Refactoring — Notification System ✅
+  - God class → SRP: UserRepository, TemplateEngine, EmailChannel, SmsChannel, NotificationService
+  - NotificationChannel interface (OCP + DIP — adding Slack = new class only)
+  - private readonly on all fields (encapsulation)
+  - Constructor injection (DIP)
+  - implements vs extends: when to use each
+  - File: `exercise-18.ts`
+
+- [x] **Exercise 19:** Final Mock Assessment — Subscription Billing System ✅
+  - Combines all phases: types, constants, Result<T,E>, guard clauses, SRP, DIP, immutability
+  - God method → validatePlan, validateDiscountCode, applyDiscount, validatePaymentMethod
+  - Inconsistent error signals (false/null/throw string) → Result<T,E> throughout
+  - EmailNotifier class (isolated side effects)
+  - BillingService as lean orchestrator with private readonly state
+  - File: `exercise-19.ts`
+
 ---
-
-## Phase 7: Mock Interview Scenarios (Days 14-16)
-**Status: 🔒 LOCKED**
-
-- [ ] **Scenario 1:** API Client Refactoring (30 min)
-- [ ] **Scenario 2:** React Component Cleanup (30 min)
-- [ ] **Scenario 3:** Business Logic Extraction (45 min)
-- [ ] **Scenario 4:** Error Handling Improvements (30 min)
-- [ ] **Scenario 5:** Legacy Code Modernization (45 min)
-
----
-
-## Phase 8: React + TypeScript Project (Future)
-**Status: 🔒 LOCKED**
-
-- [ ] Revise modern React best practices (functional components, hooks)
-- [ ] React hooks deep dive (useState, useEffect, useContext, custom hooks)
-- [ ] Set up project: Vite + React + TypeScript
-- [ ] Build: Australian Citizenship Test Quiz App
   - User provides quiz data
   - Apply all TS + Clean Code skills learned
   - Real-world project combining everything
